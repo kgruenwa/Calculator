@@ -2,7 +2,7 @@
 This is a simple calculator application built using React Native Expo and TypeScript.
 
 ## Screenshot
-![Calculator](https://user-images.githubusercontent.com/91771738/221417236-729bf988-de64-42d8-9a7a-29a648698d79.jpg | width=100)
+![](https://user-images.githubusercontent.com/91771738/221417236-729bf988-de64-42d8-9a7a-29a648698d79.jpg | width=100)
 
 
 ## Getting Started
