@@ -39,7 +39,7 @@ This will start the Expo development server and open the Expo client in your bro
 
 ### Built With
 * <a href='https://reactnative.dev/'>React Native</a>
-* <a href='https://expo.io/'>Expo</a>
+* <a href='https://expo.dev/'>Expo</a>
 * <a href='https://www.typescriptlang.org/'>TypeScript</a>
 
 ### Author
