@@ -11,17 +11,22 @@ These instructions will get you a copy of the project up and running on your loc
 ### Installing
 * Clone the repository to your local machine
 
-```git clone https://github.com/<username>/calculator.git```
+```
+git clone https://github.com/<username>/calculator.git
+```
 
 * Install the dependencies
 
-```cd calculator
+```
+cd calculator
 npm install
 ```
 
 * Start the application
 
-```npm start```
+```
+npm start
+```
 
 This will start the Expo development server and open the Expo client in your browser. You can use the Expo client to run the app on your mobile device or an emulator.
 
