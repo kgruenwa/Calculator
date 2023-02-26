@@ -5,7 +5,7 @@ This is a simple calculator application built using React Native Expo and TypeSc
 <img src="https://user-images.githubusercontent.com/91771738/221417236-729bf988-de64-42d8-9a7a-29a648698d79.jpg" width="150" height="300">
 
 ## Download APK
-[Calculator.apk](https://github.com/abhilash-malkar/Calculator/blob/master/APK/Calculator.apk)
+[Calculator.apk](https://github.com/abhilash-malkar/Calculator/raw/master/APK/Calculator.apk)
 
 
 ## Getting Started
