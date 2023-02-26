@@ -12,20 +12,20 @@ These instructions will get you a copy of the project up and running on your loc
 * Expo CLI (version 4 or later)
 
 ### Installing
-* Clone the repository to your local machine
+1. Clone the repository to your local machine
 
 ```
 git clone https://github.com/abhilash-malkar/calculator.git
 ```
 
-* Install the dependencies
+2. Install the dependencies
 
 ```
 cd calculator
 npm install
 ```
 
-* Start the application
+3. Start the application
 
 ```
 npm start
