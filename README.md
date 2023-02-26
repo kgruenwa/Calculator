@@ -4,6 +4,10 @@ This is a simple calculator application built using React Native Expo and TypeSc
 ## Screenshot
 <img src="https://user-images.githubusercontent.com/91771738/221417236-729bf988-de64-42d8-9a7a-29a648698d79.jpg" width="150" height="300">
 
+## Download APK
+[Calculator.zip](https://github.com/abhilash-malkar/Calculator/files/10833958/Calculator.zip)
+
+
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
