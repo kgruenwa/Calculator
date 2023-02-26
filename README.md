@@ -12,7 +12,7 @@ These instructions will get you a copy of the project up and running on your loc
 * Clone the repository to your local machine
 
 ```
-git clone https://github.com/<username>/calculator.git
+git clone https://github.com/abhilash-malkar/calculator.git
 ```
 
 * Install the dependencies
@@ -31,9 +31,10 @@ npm start
 This will start the Expo development server and open the Expo client in your browser. You can use the Expo client to run the app on your mobile device or an emulator.
 
 ### Built With
-* <a href='https://reactnative.dev/' target='_blank' style='color:#fff;'>React Native</a>
-* <a href='https://expo.io/' target='_blank' style='color:#fff;'>Expo</a>
-* <a href='https://www.typescriptlang.org/' target='_blank' style='color:#fff;'>TypeScript</a>
+* <a href='https://reactnative.dev/'>React Native</a>
+* <a href='https://expo.io/'>Expo</a>
+* <a href='https://www.typescriptlang.org/'>TypeScript</a>
 
 ### Authors
-Abhilash Malkar
+
+<a href="https://github.com/abhilash-malkar" target="_new">Abhilash Malkar</a>
