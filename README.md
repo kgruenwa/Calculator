@@ -31,7 +31,7 @@ npm start
 This will start the Expo development server and open the Expo client in your browser. You can use the Expo client to run the app on your mobile device or an emulator.
 
 ### Built With
-* React Native
+* <a href='https://reactnative.dev/'>React Native</a>
 * Expo
 * TypeScript
 
