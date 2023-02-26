@@ -42,5 +42,5 @@ This will start the Expo development server and open the Expo client in your bro
 * <a href='https://expo.io/'>Expo</a>
 * <a href='https://www.typescriptlang.org/'>TypeScript</a>
 
-### Authors
+### Author
 <a href="https://github.com/abhilash-malkar" target="_new">Abhilash Malkar</a>
