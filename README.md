@@ -16,7 +16,8 @@ These instructions will get you a copy of the project up and running on your loc
 * Install the dependencies
 
 ```cd calculator
-npm install```
+npm install
+```
 
 * Start the application
 
