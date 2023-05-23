@@ -1,28 +1,28 @@
+//https://reactnativeexample.com/a-simple-calculator-application-built-using-react-native-expo-and-typescript/
+
+//importieren der React-Komponenten
 import { StyleSheet, Text, View } from 'react-native';
 import Keypad from './src/Keypad';
 
 export default function App() {
   return (
+    // Äußerer Container-View mit Stilen und Hintergrundfarbe 'black'
     <View style={[styles.container,{backgroundColor: 'black'}]}>
+      {/* Symbolleisten-View */}
       <View style={styles.toolbar}>
-        <Text style={styles.title}>Calculator</Text>
       </View>
+      {/* Importierte Keypad-Komponente */}
       <Keypad/>
     </View>
   );
 }
 
+//style der Anwendung bzw. der Komponenten
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-  },
-  title:{
-    color:'#fff',
-    fontSize:40,
-    textAlign: 'left',
-    paddingStart:20
   },
   toolbar:{
     marginTop:10,

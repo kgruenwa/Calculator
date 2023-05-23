@@ -1,49 +1,48 @@
 import { StyleSheet } from "react-native";
 
-export const Styles =StyleSheet.create({
+// Definition der Styles für die Komponente
+
+export const Styles = StyleSheet.create({
     btnBlue: {
-        width: 72,
-        height: 72,
-        borderRadius: 14,
-        backgroundColor:'#678983',
+        width: 80,
+        height: 80,
+        backgroundColor: '#800080',
         justifyContent: "center",
         alignItems: "center",
-        margin: 8,
+        margin: 5,
     },
     btnDark: {
-        width: 72,
-        height: 72,
-        borderRadius: 14,
-        backgroundColor:'#2E2F38',
+        width: 80,
+        height: 80,
+        backgroundColor: '#888888',
         justifyContent: "center",
         alignItems: "center",
-        margin: 8,
+        margin: 5,
     },
     btnLight: {
-        width: 72,
-        height: 72,
-        borderRadius: 50,
-        backgroundColor:'#FFFFFF',
+        width: 80,
+        height: 80,
+        backgroundColor: '#FFFFFF',
         justifyContent: "center",
         alignItems: "center",
-        margin: 8,
+        margin: 5,
     },
     btnGray: {
-        width: 72,
-        height: 72,
-        borderRadius: 14,        
-        backgroundColor:"#678983",
+        width: 80,
+        height: 0,
+        borderRadius: 1,
+        backgroundColor: "#678983",
         justifyContent: "center",
         alignItems: "center",
-        margin: 8,
+        margin: 5,
     },
     smallTextLight: {
-        fontSize: 32,
-        color: '#FFFFFF',
+        fontSize: 40,
+        color: '#000000',
     },
     smallTextDark: {
-        fontSize: 32,
-        color:'#000000',
+        fontSize: 40,
+        color: '#000000',
     },
     // Keyboard
     row: {
@@ -52,18 +51,18 @@ export const Styles =StyleSheet.create({
     },
     viewBottom: {
         position: 'absolute',
-        bottom: 50,
+        bottom: 70,
     },
     screenFirstNumber: {
-        fontSize: 96,
-        color:'#747477',
-        fontWeight: '200',
+        fontSize: 100,
+        color: '#ffffff',
+        fontWeight: '100',
         alignSelf: "flex-end",
     },
     screenSecondNumber: {
         fontSize: 40,
-        color: '#747477',
-        fontWeight: '200',
+        color: '#ffffff',
+        fontWeight: '100',
         alignSelf: "flex-end",
     },
 });
