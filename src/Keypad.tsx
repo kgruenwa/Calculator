@@ -71,52 +71,46 @@ export default function Keypad() {
         switch (operation) {
             case "+":
                 clear();
-                var result1 = parseFloat(secondNumber) + parseFloat(firstNumber);
-                setResult(result1);
-                setFirstNumber("" + (result1));
-                setResult(null);
+                var additionResult = parseFloat(secondNumber) + parseFloat(firstNumber);
+                setResult(additionResult);
+                setFirstNumber("" + additionResult);
                 break;
             case "-":
                 clear();
-                var result = parseFloat(secondNumber) - parseFloat(firstNumber);
-                setResult(result);
-                setFirstNumber("" + (result));
-                setResult(null);
+                var subtractionResult = parseFloat(secondNumber) - parseFloat(firstNumber);
+                setResult(subtractionResult);
+                setFirstNumber("" + subtractionResult);
                 break;
             case "*":
                 clear();
-                var result = parseFloat(secondNumber) * parseFloat(firstNumber);
-                setResult(result);
-                setFirstNumber("" + (result));
-                setResult(null);
+                var multiplicationResult = parseFloat(secondNumber) * parseFloat(firstNumber);
+                setResult(multiplicationResult);
+                setFirstNumber("" + multiplicationResult);
                 break;
             case "/":
                 clear();
-                var result = parseFloat(secondNumber) / parseFloat(firstNumber);
-                setResult(result);
-                setFirstNumber("" + (result));
-                setResult(null);
+                var divisionResult = parseFloat(secondNumber) / parseFloat(firstNumber);
+                setResult(divisionResult);
+                setFirstNumber("" + divisionResult);
                 break;
             case "^":
                 clear();
-                var result = Math.pow(parseInt(secondNumber), parseInt(firstNumber));
-                setResult(result);
-                setFirstNumber("" + (result));
-                setResult(null);
+                var powerResult = Math.pow(parseInt(secondNumber), parseInt(firstNumber));
+                setResult(powerResult);
+                setFirstNumber("" + powerResult);
                 break;
             case "%":
                 clear();
-                var result = ((parseFloat(secondNumber) * parseFloat(firstNumber)) / 100);
-                setResult(result);
-                setFirstNumber("" + (result));
-                setResult(null);
+                var percentageResult = (parseFloat(secondNumber) * parseFloat(firstNumber)) / 100;
+                setResult(percentageResult);
+                setFirstNumber("" + percentageResult);
                 break;
         }
     };
+    
 
     return (
         <View style={Styles.viewBottom}>
-            {/* Anzeige des Bildschirms */}
             <View
                 style={{
                     height: 120,
@@ -124,14 +118,12 @@ export default function Keypad() {
                     justifyContent: "flex-end",
                     alignSelf: "center",
                 }}>
-                {/* Anzeige der zweiten Zahl und der ausgewählten Operation */}
                 <Text style={Styles.screenSecondNumber}>
                     {secondNumber}
                     <Text style={{ color: "purple", fontSize: 40, fontWeight: '300' }}>{operation}</Text>
                 </Text>
-                {firstNumberDisplay()} {/* Anzeige der ersten Zahl */}
+                {firstNumberDisplay()} 
             </View>
-            {/* Tastenreihen */}
             <View style={Styles.row}>
                 <Button title="Del" isGray onPress={() => setFirstNumber(firstNumber.slice(0, -1))} />
                 <Button title="^" isGray onPress={() => handleOperationPress("^")} />

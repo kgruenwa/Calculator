@@ -6,14 +6,12 @@ import Keypad from './src/Keypad';
 
 export default function App() {
   return (
-    // Äußerer Container-View mit Stilen und Hintergrundfarbe 'black'
     <View style={[styles.container,{backgroundColor: 'black'}]}>
-      {/* Symbolleisten-View */}
       <View style={styles.toolbar}>
       </View>
-      {/* Importierte Keypad-Komponente */}
       <Keypad/>
     </View>
+
   );
 }
 

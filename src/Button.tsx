@@ -1,36 +1,33 @@
-// Import der benötigten Komponenten und Styles
-import { useContext } from "react";
+// Importieren der erforderlichen Module aus React Native
 import { TouchableOpacity, Text } from "react-native";
+
+// Importieren der Styles aus einer externen Datei namens "MainStyles"
 import { Styles } from './MainStyles';
 
-// Definition des Interface für die Button-Props
+// Definition der Typen für die Props, die die Button-Komponente erwartet
 interface ButtonProps {
-    onPress: () => void; // Funktion, die aufgerufen wird, wenn der Button gedrückt wird
-    title: string; // Titeltext des Buttons
-    isBlue?: boolean; // Optionaler Parameter, der angibt, ob der Button blau sein soll
-    isGray?: boolean; // Optionaler Parameter, der angibt, ob der Button grau sein soll
+  onPress: () => void;  // Funktion, die aufgerufen wird, wenn der Button gedrückt wird
+  title: string;       // Titeltext des Buttons
+  isBlue?: boolean;    // Optionaler Parameter, der angibt, ob der Button blau sein soll
+  isGray?: boolean;    // Optionaler Parameter, der angibt, ob der Button grau sein soll
 }
 
-// Button-Komponente
+// Die Button-Komponente wird als Standardexport definiert
 export default function Button({ title, onPress, isBlue, isGray }: ButtonProps) {
-    return (
-        <TouchableOpacity
-            style={
-                // Dynamische Auswahl des Button-Stils basierend auf den übergebenen Parametern
-                isBlue ? Styles.btnBlue : isGray ? Styles.btnDark : Styles.btnLight
-            }
-            onPress={onPress}
-        >
-            <Text
-                style={
-                    // Dynamische Auswahl des Text-Stils basierend auf den übergebenen Parametern
-                    isBlue || isGray
-                        ? Styles.smallTextLight
-                        : Styles.smallTextDark
-                }
-            >
-                {title} // Anzeige des Button-Titels
-            </Text>
-        </TouchableOpacity>
-    );
+  // Rückgabewert der Button-Komponente
+  return (
+    <TouchableOpacity
+      // Der style-Prop des TouchableOpacity-Elements wird basierend auf den übergebenen isBlue und isGray-Parametern festgelegt
+      style={isBlue ? Styles.btnBlue : isGray ? Styles.btnDark : Styles.btnLight}
+      onPress={onPress} // Die onPress-Funktion wird dem TouchableOpacity als Event-Handler zugewiesen
+    >
+      <Text
+        // Der style-Prop des Text-Elements wird basierend auf den übergebenen isBlue und isGray-Parametern festgelegt
+        style={isBlue || isGray ? Styles.smallTextLight : Styles.smallTextDark}
+      >
+        {title}  
+
+      </Text>
+    </TouchableOpacity>
+  );
 }
